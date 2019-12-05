@@ -14,6 +14,6 @@
   "author": "dragonli-people",
   "license": "Apache License 2.0",
   "dependencies": {
-    "dragonli-node-with-java-service-core": "^0.9.0"
+    "dragonli-node-with-java-service-core": "^0.9.1"
   }
 }
