@@ -9,6 +9,7 @@ module.exports = {
     getUserById: (id)=>({parasType:['long'],resultType:'object'}),
     getUserList: (idList)=>({parasType:['array<long>'],resultType:'array<object>'}),
     findUser: (id)=>({parasType:['long'],resultType:'object'}),
+    findUserByKeyword: (key)=>({parasType:['string'],resultType:'object'}),
     resetPasswdById: (id,code)=>({parasType:['long','string'],resultType:'object'}),
     resetPasswdById: (key,code)=>({parasType:['string','string'],resultType:'object'}),
     changePassword: (id,password,newpw,passwdCode,dontValicodeOld)=>
