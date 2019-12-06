@@ -20,11 +20,11 @@ const UserService = require('../moduleservices/UserService');
 module.exports = class extends AppConfig {
     constructor(){
         super();
-        this.removeHandlers('authReader');
+        this.removeHandlers('authReader','roleFilter');
         this.addAppInitHandlers([
             new AppInitRegistServiceHandler('userService' ,'InvokeService',UserService),
+            new RoleFilter('roleFilter','GUEST','USER',0),
         ]);
-
 
         this.addControllerFilterHandlers([
             new AuthReadByUserServiceFilter('authReader','userService'),
