@@ -13,7 +13,7 @@
 // const GeneralErrorAdvice = require('../advices/GeneralErrorAdvice');
 // const GeneralResultFormatAdvice = require('../advices/GeneralResultFormatAdvice');
 
-const {AppConfig,AppInitRegistServiceHandler} = require('dragonli-node-with-java-service-core');
+const {AppConfig,AppInitRegistServiceHandler,RoleFilter} = require('dragonli-node-with-java-service-core');
 const AuthReadByUserServiceFilter = require('../filters/AuthReadByUserServiceFilter');
 const UserService = require('../moduleservices/UserService');
 
