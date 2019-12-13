@@ -2,7 +2,7 @@ function createSetUser(userService,context){
     return async function (user) {
         // user && codeFilter && console.log('codeFilter',codeFilter(user));
         context.user = this.user = user;
-        context.auth = this.auth = await userService.authGenerate(user.id || 0);
+        context.auth = this.auth = user ?  await userService.authGenerate(user.id || 0) : null;
     }
 }
 
